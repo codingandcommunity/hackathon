@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Simple Map</title>
+    <title>My Map Project</title>
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
     <style>
@@ -21,10 +21,12 @@
   <body>
     <div id="map"></div>
     <script>
+      // simple script that initializes the embedded Google Map
       var map;
       function initMap() {
+        // create new map centered in Troy, NY
         map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -34.397, lng: 150.644},
+          center: {lat: 42.7284, lng: 73.6918},
           zoom: 8
         });
       }
