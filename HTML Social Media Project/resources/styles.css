@@ -1,0 +1,44 @@
+
+body {
+  background-color: aliceblue;
+  padding: 0px;
+  font-family: Helvetica, sans-serif;
+  width: auto;
+}
+
+/* Login CSS */
+
+#output {
+  margin: 1em 0;
+  color: black;
+  background-color: lightblue;
+  padding: 1em;
+  border: 1px solid #ddd;
+}
+fieldset {
+  padding-top: 1em;
+}
+.field {
+  width: 120px;
+  margin: 0 0.5em 0.5em 0;
+  float: left;
+  clear: left;
+  text-align: right;
+}
+/* Sets background color of focused fields to lightblue*/
+textArea:focus {
+  background-color: lightblue;
+}
+input:focus {
+  background-color: lightblue;
+}
+.value {
+  margin: 0 0 0.5em 0;
+}
+#save {
+  float: right;
+}
+
+#password {
+  -webkit-text-security: disc;
+}
