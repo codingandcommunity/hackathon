@@ -31,6 +31,7 @@ function validate(formObj) {
     return true;
   }
 }
+<<<<<<< HEAD
 
 var username = ["Bob", "Alice"];
 var password = ["1234", "12345"];
@@ -47,3 +48,5 @@ function add(formObj) {
     return false;
   }
 }
+=======
+>>>>>>> b9a7096be0dcb36f90aec4f6937d91550d42b65c
