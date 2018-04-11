@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Login</title>
+    <title>Create Account</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link rel="stylesheet" type="text/css" href="resources/styles.css"/>
     <script type="text/javascript" src="login.js"></script>
+    <script type="text/javascript" src="resources/jquery-3.1.1.min.js"></script>
   </head>
 
   <body>
     <h1 id="logoText" onclick="window.location.href='index.html';">Title of Social Media Platform</h1>  <!-- Clickable logo leads to index page -->
-      <form id="login" name="login" action="#" method="post" onsubmit="return validate(this);">
+      <form id="login" name="login" action="#" method="post" onsubmit="return add(this);">
         <fieldset> 
-          <legend>Login</legend>
+          <legend>Create Account</legend>
           <div class="formData">
                           
             <label class="field" for="username">Username:</label>
@@ -20,13 +21,10 @@
             <label class="field" for="password">Password:</label>
             <div class="value"><input type="text" size="60" value="" name="password" id="password" autocomplete="off"/></div> <!-- Autocomplete is off to remove suggestions -->
     
-            <input type="submit" value="Login" id="save" name="save"/>
+            <input type="submit" value="Create Account" id="save" name="save"/>
           </div>
         </fieldset>
       </form>
-      
-    <button type="button" onclick="window.location.href='createAccount.html';">Create New Account</button>
-    <button type="button" onclick="window.location.href='forgotPassword.html';">Forgot Password?</button>
   </body>
   
 </html>

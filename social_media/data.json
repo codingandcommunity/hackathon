@@ -1,0 +1,13 @@
+{
+    "users": [
+        {
+            "username": "Bob",
+            "password": "1234"
+        },
+        {
+            "username": "Alice",
+            "password": "12345"
+        }
+    ]
+    //Can add more fields here  ex: "posts": []
+}

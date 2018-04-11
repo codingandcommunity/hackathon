@@ -28,7 +28,22 @@ function validate(formObj) {
     return false;
   } else {
     //success
-    alert("Success!");
     return true;
+  }
+}
+
+var username = ["Bob", "Alice"];
+var password = ["1234", "12345"];
+//can add more vars here (ex: posts)
+
+//called in createAccount.html
+function add(formObj) {
+  if (validate(formObj)) {
+    //var formData = JSON.stringify($(formObj).serializeArray());
+    username.push(formObj.usename.value);
+    password.push(formObj.password.value);
+    return true;
+  } else {
+    return false;
   }
 }
