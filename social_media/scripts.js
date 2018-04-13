@@ -1,16 +1,24 @@
-var database = {
-    "users": [
-        {
-            "username": "Bob",
-            "password": "1234"
-        },
-        {
-            "username": "Alice",
-            "password": "12345"
-        }
-    ]
-    //Can add more tables here  ex: "posts": []
-}
+
+window.onload = function() {
+  if (window.localStorage.length == 0) {
+    //initialize database
+    database = {
+      "users": [
+          {
+              "username": "Bob",
+              "password": "1234"
+          },
+          {
+              "username": "Alice",
+              "password": "12345"
+          }
+      ]
+      //Can add more tables here  ex: "posts": []
+    }
+
+    window.localStorage.setItem("database", database);
+  }
+};
 
 function validate(formObj) {
   // validation code
@@ -50,6 +58,7 @@ function validate(formObj) {
 function add(formObj) {
   if (validate(formObj)) {
     database["users"].push({"username": formObj.usename.value, "password": formObj.password.value});
+    window.localStorage.setItem("database", database);
     return true;
   } else {
     return false;
