@@ -3,7 +3,6 @@ import pygame
 screenWidth = 1000
 screenHeight = 600
 
-
 class Player(pygame.sprite.Sprite):
     def __init__(self, x, y):
         super().__init__()
@@ -12,17 +11,19 @@ class Player(pygame.sprite.Sprite):
         self.speed = 4
         self.width = 30
         self.height = 50
-        self.image = pygame.Surface([self.width, self.height])
-        self.image.fill((255, 0, 0))
+        self.image = pygame.image.load("resources/frogRight.png")
+        # self.image.fill((255, 0, 0))
         self.rect = self.image.get_rect()
         self.rect.x = x
         self.rect.y = y
         self.level = None
 
     def right(self):
+        self.image = pygame.image.load("resources/frogRight.png")
         self.changeX = self.speed
 
     def left(self):
+        self.image = pygame.image.load("resources/frogLeft.png")
         self.changeX = -self.speed
 
     def stop(self):
