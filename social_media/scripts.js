@@ -1,3 +1,17 @@
+var database = {
+    "users": [
+        {
+            "username": "Bob",
+            "password": "1234"
+        },
+        {
+            "username": "Alice",
+            "password": "12345"
+        }
+    ]
+    //Can add more tables here  ex: "posts": []
+}
+
 function validate(formObj) {
   // validation code
   var alertString = "";
@@ -31,22 +45,13 @@ function validate(formObj) {
     return true;
   }
 }
-<<<<<<< HEAD
-
-var username = ["Bob", "Alice"];
-var password = ["1234", "12345"];
-//can add more vars here (ex: posts)
 
 //called in createAccount.html
 function add(formObj) {
   if (validate(formObj)) {
-    //var formData = JSON.stringify($(formObj).serializeArray());
-    username.push(formObj.usename.value);
-    password.push(formObj.password.value);
+    database["users"].push({"username": formObj.usename.value, "password": formObj.password.value});
     return true;
   } else {
     return false;
   }
 }
-=======
->>>>>>> b9a7096be0dcb36f90aec4f6937d91550d42b65c
