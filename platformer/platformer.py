@@ -8,7 +8,7 @@ class Player(pygame.sprite.Sprite):
         super().__init__()
         self.changeX = 0
         self.changeY = 0
-        self.speed = 4
+        self.speed = 9
         self.width = 30
         self.height = 50
         self.image = pygame.image.load("resources/frogRight.png")
@@ -32,7 +32,7 @@ class Player(pygame.sprite.Sprite):
 
     def jump(self):
         if self.rect.bottom >= screenHeight:
-            self.changeY = -10
+            self.changeY = -15
 
     def gravity(self):
         self.changeY += 1
