@@ -4,12 +4,13 @@
     <title>Login</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link rel="stylesheet" type="text/css" href="resources/styles.css"/>
+    <script type="text/javascript" src="resources/jquery-3.3.1.min.js"/>
     <script type="text/javascript" src="scripts.js"></script>
   </head>
 
   <body>
     <h1 id="logoText" onclick="window.location.href='index.html';">Title of Social Media Platform</h1>  <!-- Clickable logo leads to index page -->
-      <form id="login" name="login" action="#" method="post" onsubmit="return validate(this);">
+      <form id="login" name="login" action="#" method="post" onsubmit="return loginUser(this);">
         <fieldset> 
           <legend>Login</legend>
           <div class="formData">

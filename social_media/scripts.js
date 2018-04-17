@@ -1,6 +1,15 @@
+function getDatabase() {
+  return JSON.parse(window.localStorage.getItem("database"));
+}
+
+function saveDatabase(database) {
+  window.localStorage.setItem("database", JSON.stringify(database));
+}
 
 window.onload = function() {
+  var database;
   if (window.localStorage.length == 0) {
+
     //initialize database
     database = {
       "users": [
@@ -15,10 +24,17 @@ window.onload = function() {
       ]
       //Can add more tables here  ex: "posts": []
     }
-
-    window.localStorage.setItem("database", database);
+    saveDatabase(database);
+  } else {
+    database = getDatabase(); 
   }
+  console.log(database);
 };
+
+function redirect(url) {
+  console.log("Redirecting to " + url);
+  window.location.href = url;
+}
 
 function validate(formObj) {
   // validation code
@@ -55,12 +71,24 @@ function validate(formObj) {
 }
 
 //called in createAccount.html
-function add(formObj) {
+function addUser(formObj) {
   if (validate(formObj)) {
-    database["users"].push({"username": formObj.usename.value, "password": formObj.password.value});
-    window.localStorage.setItem("database", database);
+    database = getDatabase();
+    database.users.push({"username": formObj.username.value, "password": formObj.password.value});
+    saveDatabase(database);
     return true;
   } else {
     return false;
   }
+}
+
+function loginUser(formObj) {
+  // first check if the user exists in the database
+  database = getDatabase();
+  console.log(formObj.username.value);
+  database.users.forEach(function(user) { 
+      if (user.username == formObj.username.value && user.password == formObj.password.value) {
+        redirect('/index.html');
+      }
+  });
 }
