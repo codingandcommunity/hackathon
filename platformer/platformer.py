@@ -122,12 +122,15 @@ def main():
 
     done = False
     while not done:
-        preshift = player.shifted
+        # all events such as mouse clicks and key presses
         for event in pygame.event.get():
+            # if the player quits out of the screen
             if event.type == pygame.QUIT:
                 done = True
 
+            # handles keyboard presses
             if event.type == pygame.KEYDOWN:
+                # movement
                 if event.key == pygame.K_LEFT:
                     player.left()
                 if event.key == pygame.K_RIGHT:
@@ -135,14 +138,17 @@ def main():
                 if event.key == pygame.K_UP:
                     player.jump()
 
+            # when the player releases a key
             if event.type == pygame.KEYUP:
+                # stop moving
                 if event.key == pygame.K_LEFT and player.changeX < 0:
                     player.stop()
                 if event.key == pygame.K_RIGHT and player.changeX > 0:
                     player.stop()
 
+            # when the player clicks
             if event.type == pygame.MOUSEBUTTONDOWN:
-                print(pygame.mouse.get_pos())
+                print(pygame.mouse.get_pos())  # prints screen coordinates for easy map building
 
         # draw all the things
         # (NOTE: Order matters! The last thing drawn will appear in front of all the things before it)
