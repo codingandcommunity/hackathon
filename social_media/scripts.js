@@ -6,9 +6,17 @@ function saveDatabase(database) {
   window.localStorage.setItem("database", JSON.stringify(database));
 }
 
+function getCurrentUser() {
+  return window.localStorage.getItem("user");
+}
+
+function setCurrentUser(username) {
+  window.localStorage.setItem("user", username);
+}
+
 window.onload = function() {
   var database;
-  if (window.localStorage.length == 0) {
+  if (window.localStorage.length === 0) {
 
     //initialize database
     database = {
@@ -23,7 +31,7 @@ window.onload = function() {
           }
       ]
       //Can add more tables here  ex: "posts": []
-    }
+    };
     saveDatabase(database);
   } else {
     database = getDatabase(); 
@@ -41,14 +49,14 @@ function validate(formObj) {
   var alertString = "";
   //validation for username field
   var user = 0;
-  if (formObj.username.value == "") {
+  if (formObj.username.value === "") {
     alertString += "You must enter a username\n";
     user += 1;
   }
     
   //validation for password field  
   var pass = 0;
-  if (formObj.password.value == "") {
+  if (formObj.password.value === "") {
     alertString += "You must enter a password\n";
     pass += 1;
   }
@@ -73,7 +81,7 @@ function validate(formObj) {
 //called in createAccount.html
 function addUser(formObj) {
   if (validate(formObj)) {
-    database = getDatabase();
+    var database = getDatabase();
     database.users.push({"username": formObj.username.value, "password": formObj.password.value});
     saveDatabase(database);
     return true;
@@ -83,12 +91,18 @@ function addUser(formObj) {
 }
 
 function loginUser(formObj) {
-  // first check if the user exists in the database
-  database = getDatabase();
-  console.log(formObj.username.value);
-  database.users.forEach(function(user) { 
-      if (user.username == formObj.username.value && user.password == formObj.password.value) {
-        redirect('/index.html');
-      }
-  });
+  if (validate(formObj)) {
+    // first check if the user exists in the database
+    var database = getDatabase();
+    console.log(formObj.username.value);
+    database.users.forEach(function(user) { 
+        if (user.username == formObj.username.value && user.password == formObj.password.value) {
+          setCurrentUser(user.username);
+          redirect('/index.html');
+        }
+    });
+  } else {
+    return false;
+  }
+  
 }
