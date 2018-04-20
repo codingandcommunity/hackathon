@@ -90,7 +90,10 @@ function addUser(formObj) {
   }
 }
 
-function loginUser(formObj) {
+//function loginUser(formObj) {
+$("#login").on("submit", function (e) {
+  console.log("Hello!");
+  e.preventDefault();
   if (validate(formObj)) {
     // first check if the user exists in the database
     var database = getDatabase();
@@ -105,4 +108,4 @@ function loginUser(formObj) {
     return false;
   }
   
-}
+});
