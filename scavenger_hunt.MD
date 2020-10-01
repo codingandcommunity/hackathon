@@ -2,7 +2,7 @@
 Welcome to the 2020 Launchpad Scavenger Hunt! Complete tasks to get as many points as possible before Sunday, October 11th at 2pm. Unless specified, you can use whichever programming language you want. Once you have completed a task, check in with one of the Coding&&Community volunteers and we will keep track of the number of points you earned. Whoever scores the most points will win the Scavenger Hunt Award!
 
 ### Tasks worth 10 Points:
-1. Find the sum of the first 123,456 integers without code.
+1. Find the sum of the first 123,456 integers without code. For a bonus 10 points, write a program that does the calculation for you.
 2. Code a Celsius to Fahrenheit converter.
 3. Code a Fahrenheit to Celsius converter.
 4. Balance the following chemical reaction: _Na + _H<sub>2</sub>O → _NaOH + _H<sub>2</sub>
@@ -50,12 +50,12 @@ Welcome to the 2020 Launchpad Scavenger Hunt! Complete tasks to get as many poin
 ### Tasks worth 50 Points:
 38. Write a program that prints the current weather.
 39. Write a program that prints the current weather in a location the user provides.
-40. Write a program that finds the Greatest Common Divisor of two numbers using the Euclidean Algorithm
-41. Given three points, write a program that finds the area of the triangle defined by the three points.
+40. Write a program that finds the Greatest Common Divisor of two numbers using the [Euclidean Algorithm](https://en.wikipedia.org/wiki/Euclidean_algorithm).
+41. Given three points, write a program that finds the area of the triangle defined by three points.
 42. Write a program that determines if a point is within a circle of known center and radius.
 43. Randomly generate 10,000 points within the square defined by (0, 0) and (1,1). For each point, determine if it is within the circle at (0.5, 0.5) with radius 0.5. Count the number of points where this is true and divide by the total number of points generated. Multiply this value by 4, it will be very close to a famous number. What is it?
 44. Write a program that returns the hexadecimal representation of a number for inputs from 0-256. Using your solution to this problem and the previous, write a program that converts any number to its hexadecimal representation.
-45. Repeat task #5 10,000 times and record the count of random numbers added. Find the mean of the counts. The number will be very close to a famous number. What is it?
+45. Repeat task #5 10,000 times (in a loop, not manually!) and record the count of random numbers added for each run. Find the mean of the counts. The number will be very close to a famous number. What is it?
 
 ### Tasks worth 60 Points:
 46. Using Python’s BeautifulSoup library (or a similar HTML parser), write a program that downloads all the images off of a web page. Use it to download all the flags of the world from the [CIA World Factbook page](https://www.cia.gov/library/publications/the-world-factbook/docs/flagsoftheworld.html)
@@ -66,7 +66,7 @@ Welcome to the 2020 Launchpad Scavenger Hunt! Complete tasks to get as many poin
 51. Write a program that turns the day of the year (1-365) in 2020 to its month and day (for example, the 314th day of 2020 is November 9th).
 
 ### Tasks worth 70 Points:
-52. Write a simulation of Conway’s Game of Life using a fixed-size board.
+52. Write a simulation of [Conway’s Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) using a fixed-size board.
 
 ### Tasks worth 80 Points:
-53. Write a program that determines whether a 3x3 grid is a valid sudoku solution (each column and row contains the numbers 1-9 exactly once). Bonus 50 points: how many valid configurations are there?
+53. Write a program that determines whether a 3x3 grid is a valid sudoku solution (each column and row contains the numbers 1-3 exactly once). Bonus 50 points: how many valid configurations are there?
