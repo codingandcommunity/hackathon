@@ -6,7 +6,7 @@ We believe that the thieves have encoded the location of the money in the final 
 
 The first message was most likely encoded with a Caesar cipher. It is up to you to determine the correct shift. Once you determine the shift, it should give you a message in plain English.
 
-Next, the second message was most likely encoded with a substitution cipher. We know that the message begins with the phrase "THEMONEY" and that the vowels are encoded in the same way as the first message. For example, if "A" (encrypted) becomes "F" (decrypted) in the decoded first message, then you know that "A" (encrypted) becomes "F" (decrypted) in the second message as well.
+Next, the second message was most likely encoded with a substitution cipher. We know that the message begins with the phrase "THEMONEY" and that the vowels are encoded in the same way as the first message. For example, if "A" (decrypted) becomes "F" (encrypted) in the decoded first message, then you know that "A" (decrypted) becomes "F" (encrypted) in the second message as well.
 
 Once you have cracked the second message, reverse it and run it through an MD5 hash. If you are correct, the hash will match the third message shown below and you will know the location of the $100 million.
 
