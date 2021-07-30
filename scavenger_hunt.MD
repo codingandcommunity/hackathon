@@ -1,5 +1,5 @@
 # Scavenger Hunt
-Welcome to the 2020 Launchpad Scavenger Hunt! Complete tasks to get as many points as possible before Sunday, October 11th at 2pm. Unless specified, you can use whichever programming language you want. Once you have completed a task, check in with one of the Coding&&Community volunteers and we will keep track of the number of points you earned. Whoever scores the most points will win the Scavenger Hunt Award!
+Welcome to the Scavenger Hunt! Complete tasks to get as many points as possible before Sunday, October 11th at 2pm. Unless specified, you can use whichever programming language you want. Once you have completed a task, check in with one of the Coding&&Community volunteers and we will keep track of the number of points you earned. Whoever scores the most points will win the Scavenger Hunt Award!
 
 ### Tasks worth 10 Points:
 1. Find the sum of the first 123,456 integers without code. For a bonus 10 points, write a program that does the calculation for you.
@@ -63,7 +63,7 @@ Welcome to the 2020 Launchpad Scavenger Hunt! Complete tasks to get as many poin
 48. Write a program that finds the determinant of a matrix.
 49. Write a program that multiplies two matrices together.
 50. Write a program that determines the number of unique words in a sentence.
-51. Write a program that turns the day of the year (1-365) in 2020 to its month and day (for example, the 314th day of 2020 is November 9th).
+51. Write a program that turns the day of the year (1-365) in 2021 to its month and day (for example, the 314th day of 2021 is November 10th).
 
 ### Tasks worth 70 Points:
 52. Write a simulation of [Conway’s Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) using a fixed-size board.
