@@ -35,38 +35,35 @@ Welcome to the Scavenger Hunt! Complete tasks to get as many points as possible 
 27. Write a program that prints the amount of days, hours, minutes, and seconds until the start of the 2022 Olympics.
 28. Given two lists of numbers, write a program that prints the numbers that are in both lists.
 29. Write a program that determines if a given date is closer to April Fools’ day (April 1st) or closer to the fall equinox (September 22nd).
-30. The following image is a scrambled flag from the [CIA World Factbook page](https://www.cia.gov/library/publications/the-world-factbook/docs/flagsoftheworld.html). Which one is it? [Credit: FiveThirtyEight](https://fivethirtyeight.com/features/can-you-solve-the-vexing-vexillology/)
-![Scrambled Flag](https://github.com/codingandcommunity/hackathon/blob/master/scrambled_flag.png)
 
 ### Tasks worth 40 Points:
-31. Write a program that takes in a string as input, and outputs the string reversed.
-32. Determine if an input string is a palindrome.
-33. Write a program that returns the hexadecimal representation of a number for inputs from 0-16.
-34. Write a program that prints the first three headlines from bbc.com. Hint: news websites publish RSS feeds for this exact purpose. BeautifulSoup is a python library well-suited for this task.
-35. Neptune completes one orbit every 165 years (= 60,255 days). On what day will Neptune complete its 13th orbit since January 1st, 1337? (Don’t worry about leap days).
-36. Write a program to remove duplicates from a list.
-37. In Formula 1 races, drivers are awarded points if they place in the top 10 (25 for 1st place, 18 for 2nd, 15, 12, 10, 8, 6, 4, 2 and 1 points for positions 3 through 10). Given a list of places, write a program to determine the number of points a driver has scored in a season. 
+30. Write a program that takes in a string as input, and outputs the string reversed.
+31. Determine if an input string is a palindrome.
+32. Write a program that returns the hexadecimal representation of a number for inputs from 0-16.
+33. Write a program that prints the first three headlines from bbc.com. Hint: news websites publish RSS feeds for this exact purpose. BeautifulSoup is a python library well-suited for this task.
+34. Neptune completes one orbit every 165 years (= 60,255 days). On what day will Neptune complete its 13th orbit since January 1st, 1337? (Don’t worry about leap days).
+35. Write a program to remove duplicates from a list.
+36. In Formula 1 races, drivers are awarded points if they place in the top 10 (25 for 1st place, 18 for 2nd, 15, 12, 10, 8, 6, 4, 2 and 1 points for positions 3 through 10). Given a list of places, write a program to determine the number of points a driver has scored in a season. 
 
 ### Tasks worth 50 Points:
-38. Write a program that prints the current weather.
-39. Write a program that prints the current weather in a location the user provides.
-40. Write a program that finds the Greatest Common Divisor of two numbers using the [Euclidean Algorithm](https://en.wikipedia.org/wiki/Euclidean_algorithm).
-41. Given three points, write a program that finds the area of the triangle defined by three points.
-42. Write a program that determines if a point is within a circle of known center and radius.
-43. Randomly generate 10,000 points within the square defined by (0, 0) and (1,1). For each point, determine if it is within the circle at (0.5, 0.5) with radius 0.5. Count the number of points where this is true and divide by the total number of points generated. Multiply this value by 4, it will be very close to a famous number. What is it?
-44. Write a program that returns the hexadecimal representation of a number for inputs from 0-256. Using your solution to this problem and the previous, write a program that converts any number to its hexadecimal representation.
-45. Repeat task #5 10,000 times (in a loop, not manually!) and record the count of random numbers added for each run. Find the mean of the counts. The number will be very close to a famous number. What is it?
+37. Write a program that prints the current weather.
+38. Write a program that prints the current weather in a location the user provides.
+39. Write a program that finds the Greatest Common Divisor of two numbers using the [Euclidean Algorithm](https://en.wikipedia.org/wiki/Euclidean_algorithm).
+40. Given three points, write a program that finds the area of the triangle defined by three points.
+41. Write a program that determines if a point is within a circle of known center and radius.
+42. Randomly generate 10,000 points within the square defined by (0, 0) and (1,1). For each point, determine if it is within the circle at (0.5, 0.5) with radius 0.5. Count the number of points where this is true and divide by the total number of points generated. Multiply this value by 4, it will be very close to a famous number. What is it?
+43. Write a program that returns the hexadecimal representation of a number for inputs from 0-256. Using your solution to this problem and the previous, write a program that converts any number to its hexadecimal representation.
+44. Repeat task #5 10,000 times (in a loop, not manually!) and record the count of random numbers added for each run. Find the mean of the counts. The number will be very close to a famous number. What is it?
 
 ### Tasks worth 60 Points:
-46. Using Python’s BeautifulSoup library (or a similar HTML parser), write a program that downloads all the images off of a web page. Use it to download all the flags of the world from the [CIA World Factbook page](https://www.cia.gov/library/publications/the-world-factbook/docs/flagsoftheworld.html)
-47. Build a basic web page in HTML. Include 3 images, 3 links, and 3 different kinds of text.
-48. Write a program that finds the determinant of a matrix.
-49. Write a program that multiplies two matrices together.
-50. Write a program that determines the number of unique words in a sentence.
-51. Write a program that turns the day of the year (1-365) in 2022 to its month and day (for example, the 314th day of 2022 is November 10th).
+45. Build a basic web page in HTML. Include 3 images, 3 links, and 3 different kinds of text.
+46. Write a program that finds the determinant of a matrix.
+47. Write a program that multiplies two matrices together.
+48. Write a program that determines the number of unique words in a sentence.
+49. Write a program that turns the day of the year (1-365) in 2022 to its month and day (for example, the 314th day of 2022 is November 10th).
 
 ### Tasks worth 70 Points:
-52. Write a simulation of [Conway’s Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) using a fixed-size board.
+50. Write a simulation of [Conway’s Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) using a fixed-size board.
 
 ### Tasks worth 80 Points:
-53. Write a program that determines whether a 3x3 grid is a valid sudoku solution (each column and row contains the numbers 1-3 exactly once). Bonus 50 points: how many valid configurations are there?
+51. Write a program that determines whether a 3x3 grid is a valid sudoku solution (each column and row contains the numbers 1-3 exactly once). Bonus 50 points: how many valid configurations are there?
