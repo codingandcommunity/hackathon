@@ -32,7 +32,7 @@ Welcome to the Scavenger Hunt! Complete tasks to get as many points as possible 
 24. Use a Taylor series to approximate e^2. Determine the number of terms necessary for your approximation to be within 0.1% of the true value.
 25. Write a program to output all the prime factors of a given input number.
 26. Write a program to find the millionth Fibonacci number. What is it?
-27. Write a program that prints the amount of days, hours, minutes, and seconds until the start of the 2022 Olympics.
+27. Write a program that prints the amount of days, hours, minutes, and seconds until the start of the 2024 Olympics.
 28. Given two lists of numbers, write a program that prints the numbers that are in both lists.
 29. Write a program that determines if a given date is closer to April Fools’ day (April 1st) or closer to the fall equinox (September 22nd).
 
@@ -60,7 +60,7 @@ Welcome to the Scavenger Hunt! Complete tasks to get as many points as possible 
 46. Write a program that finds the determinant of a matrix.
 47. Write a program that multiplies two matrices together.
 48. Write a program that determines the number of unique words in a sentence.
-49. Write a program that turns the day of the year (1-365) in 2022 to its month and day (for example, the 314th day of 2022 is November 10th).
+49. Write a program that turns the day of the year (1-365) in 2023 to its month and day (for example, the 314th day of 2022 is November 10th).
 
 ### Tasks worth 70 Points:
 50. Write a simulation of [Conway’s Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) using a fixed-size board.
