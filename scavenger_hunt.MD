@@ -1,5 +1,5 @@
 # Scavenger Hunt
-Welcome to the Scavenger Hunt! Complete tasks to get as many points as possible before Sunday, October 11th at 2pm. Unless specified, you can use whichever programming language you want. Once you have completed a task, check in with one of the Coding&&Community volunteers and we will keep track of the number of points you earned. Whoever scores the most points will win the Scavenger Hunt Award!
+Welcome to the Scavenger Hunt! Complete tasks to get as many points as possible before Sunday, April 15th at 4pm. Unless specified, you can use whichever programming language you want. Once you have completed a task, check in with one of the Coding&&Community volunteers and we will keep track of the number of points you earned. Whoever scores the most points will win the Scavenger Hunt Award!
 
 ### Tasks worth 10 Points:
 1. Find the sum of the first 123,456 integers without code. For a bonus 10 points, write a program that does the calculation for you.
